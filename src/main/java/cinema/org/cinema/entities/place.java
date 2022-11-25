@@ -19,7 +19,7 @@ public class place implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(length = 75)
-    private String name;
+    private int numero;
     private double longitude, latitude, altitude;
     @ManyToOne
     private salle salle;
